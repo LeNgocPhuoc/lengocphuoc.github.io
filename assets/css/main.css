@@ -1,0 +1,272 @@
+.container {
+    padding: 0 45px;
+    margin: 0 auto;
+}
+
+.greeting__description {
+    font-size:  1.6rem;
+    color: var(--heading-color);
+    margin: 6px 0 0;
+}
+
+.greeting__link {
+    color: var(--heading-color);
+}
+
+.greeting__link:hover {
+    color: var(--hover-color);
+    transition: color linear 0.2s;
+}
+
+.cotainer__content {
+    margin-top: 56px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cotainer__content.show {
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 1s;
+}
+
+.cotainer__content.active {
+    opacity: 1;
+}
+
+.cotainer__title {
+    font-size: 2.8rem;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.cotainer__description {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin: 6px 0 0;
+    display: flex;
+}
+
+.cotainer__more-info-link {
+    font-size: 1.6rem;
+    margin-left: auto;
+    text-decoration: none;
+    color: var(--hover-color);
+}
+
+.cotainer__more-info-link.moblie {
+    display: none;
+} 
+
+.container__list {
+    position: relative;
+}
+
+.container__list .row {
+    overflow: hidden;
+}
+
+#location-first,
+#event__item-first,
+#suggest-luxstay__item-first,
+#discovery__item-first,
+#user-manual__item-first {
+    margin-left: 0;
+    transition: linear 0.3s;
+}
+
+
+/* .container__item.active {
+    display: block;
+}
+
+.container__item.next {
+    animation: nextIn linear 0.3s;
+}
+
+.container__item.prev {
+    animation: prevIn linear 0.3s;
+} */
+
+/* Begin: Location */
+.location__item {
+    position: relative;
+    padding-top: 125%;
+    background: top center / cover no-repeat;
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
+}
+
+.location__content {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+}
+
+.location__title {
+    font-size: 2.4rem;
+    color: var(--while-color);
+    margin: 0;
+}
+
+.location__des {
+    font-size: 1.6rem;
+    color: var(--while-color);
+    margin: 0;
+}
+/* End: Location */
+
+/* Begin: Event */
+.event__item {
+    display: block;
+    text-decoration: none;
+}
+
+.event__img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* End: Event */
+
+/* Begin: Suggest from Luxstay */
+.suggest-luxstay__item {
+    display: block;
+    text-decoration: none;
+}
+
+.suggest-luxstay__img {
+    width: 100%;
+    padding-top: 62.5%;
+    background: top center / cover no-repeat;
+    border-radius: 3px;
+}
+
+.suggest-luxstay__title {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 6px 0 0 0;
+}
+
+.suggest-luxstay__des {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 6px 0 0 0;
+}
+
+.js-suggest-luxstay__item:nth-of-type(2n) 
+.suggest-luxstay__item:hover
+.suggest-luxstay__des {
+    color: var(--hover-color);
+    transition: color linear 0.2s;
+}
+/* End: Suggest from Luxstay */
+
+/* Begin: Discovery */
+.discovery__item {
+    position: relative;
+    background-image: linear-gradient(0, #808080, #EEEEEE);
+    border-radius: 4px;
+    padding-top: 62.5%;
+}
+
+.discovery__info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.discovery__title {
+    flex: 1;
+}
+
+.discovery__title,
+.discovery__des {
+    display: block;
+    padding: 24px;
+}
+
+.discovery__title-link,
+.discovery__des-link {
+    color: var(--while-color);
+    font-weight: 600;
+}
+
+.discovery__title-link {
+    background-color: #BEBEBE;
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    padding: 0 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.discovery__des-link {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    height: 6.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+/* End: Discovery */
+
+/* Begin: User manual */
+.user-manual__item {
+    padding-top: 55.55%;
+    display: block;
+    background: top center / cover no-repeat;
+    border-radius: 4px;
+}
+/* End: User manual */
+
+/* Begin: App store */
+.app-introduce__tiltle {
+    font-size: 3rem;
+    color: var(--heading-color);
+    margin: 8px 0 0 0;
+    font-weight: 700;
+}
+
+.app-introduce__des {
+    font-size: 1.6rem;
+    color: var(--heading-color);
+    margin: 20px 0 0 0;
+}
+
+.app-store__list {
+    align-items: center;
+    margin-top: 78px;
+}
+
+.app__link  {
+    text-decoration: none;
+}
+
+.app__img {
+    max-width: 100%;
+    margin-top: 12px;
+}
+
+.app-store__qrcode {
+    width: 206px;
+    padding: 14px;
+    border: 1px solid #E8E8E8;
+}
+
+/* Begin: End store */
+

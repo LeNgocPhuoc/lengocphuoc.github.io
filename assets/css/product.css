@@ -1,0 +1,36 @@
+.container {
+    margin-top: var(--header-height);
+    padding: 0 45px;
+}
+
+.filter {
+    padding: 12px 0;
+}
+
+.filter__list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.filter__item {
+    margin: 0 6px;
+}
+
+.filter__link {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--heading-color);
+    text-decoration: none;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.filter__link:hover {
+    background-color: var(--hover-color);
+    color: var(--while-color);
+    transition: all linear 0.3s;
+}

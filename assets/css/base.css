@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;  
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide arrow input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.app {
+    overflow: hidden;
+}
+
+h3 {
+    line-height: 4rem;
+}
+
+:root {
+    --while-color: #fff;
+    --black-color: #000;
+    --heading-color: #222222;
+    --text-color: #555555;
+    --border-color: #f2f2f2;
+    --hover-color: #f65e39;
+    --header-height: 80px;
+    --header-search-height: 47px;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-42 {
+    margin-top: 42px !important;
+}
+
+/* arrow btn */
+.arrow-btn {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    background-color: var(--while-color);
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 20px 0 rgba(0 0 0 / 10%);
+    font-size: 2rem;
+    color: var(--heading-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    /* pointer-events: none; */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.arrow-btn--on-top {
+    transform: translateY(-100%);
+}
+
+.arrow-btn.disable {
+    display: none;
+}
+
+.arrow-btn.active {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: visible;
+}
+
+.arrow-btn.active:hover {
+    color: var(--hover-color);
+    box-shadow: 0 0 3px 0 var(--hover-color);
+}
+
+.arrow-btn.prev-btn {
+    left: -16px;
+}
+
+.arrow-btn.next-btn {
+    right: -16px;
+}
+
+/* Begin: Calendar */
+.calendar {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: -315px;
+    width: 700px;
+    background-color: var(--while-color);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0 0 0 / 10%);
+    cursor: default;
+    opacity: 0;
+    transition: all linear 0.3s;
+    visibility: hidden;
+}
+
+.calendar__moth-of-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.calendar__day-list {
+    padding-left: 0;
+    margin: 6px 0 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.calendar__day {
+    width: 14.285%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.calendar__date-list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar__date {
+    position: relative;
+    width: 13.6%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #F6F6F6;
+    color: #CDCDCD;
+    margin: 1px;
+    border-radius: 3px;
+}
+
+.calendar__date.active {
+    background-color: #E0F2E7;
+    color: #26A65B;
+    cursor: pointer;
+}
+
+.calendar__date.picker {
+    border: 2px solid var(--heading-color);
+}
+
+.calendar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.calendar-btn:hover {
+    text-decoration: underline; 
+}
+
+.calendar-cancel-btn {
+    color: var(--heading-color);
+}
+
+.calendar-apply-btn {
+    color: var(--hover-color);
+}
+
+.change-month-btn {
+    position: absolute;
+    top: 16px;
+    width: 40px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.change-month-btn:hover {
+    border: 1px solid var(--text-color);
+}
+
+.change-month-btn.prev {
+    left: 16px;
+}
+
+.change-month-btn.next {
+    right: 16px;
+}
+
+.change-month-icon {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+/* End: Calendar */
+
+
+/* Animation */
+@keyframes nextIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes prevIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+

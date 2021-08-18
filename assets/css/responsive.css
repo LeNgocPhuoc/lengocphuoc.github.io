@@ -1,0 +1,232 @@
+/* Mobile & Tablet & PC low resolution (max-width: 1239px)*/
+@media (max-width: 77.4375em) {
+
+    .header,
+    .sliders,
+    .content,
+    .container,
+    .footer-menu {
+        padding: 0 20px;
+    }
+
+    .welcome {
+        padding: 50px 20px 80px;
+    }
+
+    .header-logo,
+    .header-search__date-booking,
+    .header-search__number-guest {
+        display: none;
+    }
+
+    .header-logo-sm {
+        display: flex;
+    }
+
+    .app-store__list {
+        margin-top: 12px;
+    }
+
+    .footer-info {
+        padding: 20px 20px;
+    }
+}
+
+/* PC low resolution (min-width: 1024px) and (max-width: 1239px) */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+    .hide-on-low-pc {
+        display: none;
+    }
+
+    .cotainer__content {
+        margin-top: 48px;
+    }
+}
+
+/* Mobile & Tablet (max-width: 1023px)*/
+@media (max-width: 63.9375em) {
+    .hide-on-moblie-tablet {
+        display: none;
+    }
+
+    .row.column-reverse-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .header-bar-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo-sm {
+        width: 100%;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-menu {
+        position: fixed;
+        z-index: 15;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: 20px;
+        background-color: var(--while-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all linear 0.3s;
+    }
+
+    .header-menu__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-menu__item.active .header-menu__link {
+        margin-left: 10px;
+        font-weight: 600;
+    }
+
+    .header-menu__item.active::after {
+        top: 10px;
+        right: -10px;
+    }
+
+    .header-menu__link {
+        padding: 15px 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+
+    .header-languages {
+        margin: 5px 0;
+        width: 100%;
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    .header-languages__img,
+    .header-languages-icon {
+        margin: 0 10px;
+    }
+
+    .header-languages__text {
+        margin-right: auto;
+    }
+
+    .languagues-option {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .language-option, .unit-option {
+        width: 100%;
+        margin: 0;
+        padding: 6px 0;
+    } 
+
+    .unit-option {
+        border-left: none;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .transaction__img {
+        width: 30%;
+    }
+    
+    .certification__img {
+        width: 40%;
+    }
+}
+
+/* Tablet (min-width: 740px) and (max-width: 1023px) */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+
+    .header-menu {
+        width: 390px
+    }
+
+    .cotainer__content {
+        margin-top: 42px;
+    }
+
+    .app-store__list {
+        margin-left: 30px;
+    }
+
+    .account-box {
+        margin-top: -30px;
+    }
+}
+
+/* Mobile (max-width: 739px) */
+@media (max-width: 46.1875em) {
+    .hide-on-moblie {
+        display: none;
+    }
+
+    /* Header */
+    .header,
+    .sliders,
+    .container,
+    .footer-menu {
+        padding: 0 10px;
+    }
+
+    .welcome {
+        padding: 50px 20px 80px;
+    }
+
+    .header-menu {
+        width: 100%;
+    }
+
+    .header-search__input {
+        width: 200px;
+    }
+
+    .header-menu__link {
+        padding: 8px 0;
+    }
+
+    .language-option__item, .unit-option__item {
+        padding: 8px 0;
+    }
+
+    /* Body */
+    .cotainer__content {
+        margin-top: 36px;
+    }
+
+    .cotainer__more-info-link.moblie {
+        display: block;
+    }
+
+    .container__list .row {
+        overflow: auto;
+    }
+
+    .container__list .row::-webkit-scrollbar {
+        display: none;
+    }
+
+    .col.container__item {
+        display: block;
+    }
+
+    .footer-info {
+        background-color: #f6f6f6;
+        padding: 20px 20px;
+    }
+
+    .account-box {
+        margin-top: -50px;
+    }
+}
