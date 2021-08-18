@@ -461,7 +461,12 @@
 /* Mobile & Tablet & PC low resolution (max-width: 1239px)*/
 @media (max-width: 77.4375em) {
     .header-logo {
-        width: 150px !important;
+        width: 150px;
+        display: block !important;
+    }
+
+    .header-logo-sm {
+        display: none !important;
     }
 }
 
