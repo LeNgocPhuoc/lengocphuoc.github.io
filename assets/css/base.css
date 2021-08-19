@@ -16,7 +16,7 @@ input::-webkit-inner-spin-button {
 }
 
 .app {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h3 {
@@ -28,7 +28,7 @@ h3 {
     --black-color: #000;
     --heading-color: #222222;
     --text-color: #555555;
-    --border-color: #f2f2f2;
+    --border-color: #EBEEF5;
     --hover-color: #f65e39;
     --header-height: 80px;
     --header-search-height: 47px;

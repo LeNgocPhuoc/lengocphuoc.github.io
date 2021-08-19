@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="app">
         <!-- Header -->
@@ -31,8 +33,10 @@
                 </div>
                 <div class="header-search">
                     <div class="header-search__input js-header-search__input">
-                        <label for="header-search__input-id" class="header-search-input__icon header-search__icon fas fa-search"></label>
-                        <input type="text" placeholder="Tìm kiếm" value="Hội An" name="" id="header-search__input-id" class="header-search-input__text header-search__text">
+                        <label for="header-search__input-id"
+                            class="header-search-input__icon header-search__icon fas fa-search"></label>
+                        <input type="text" placeholder="Tìm kiếm" value="Hội An" name="" id="header-search__input-id"
+                            class="header-search-input__text header-search__text">
                         <i class="header-search-cancel__icon header-search__icon fas fa-times"></i>
                     </div>
                     <div class="header-search__date-booking js-header-search__input">
@@ -152,8 +156,10 @@
                                     <span class="calendar-apply-btn calendar-btn">Áp dụng</span>
                                 </div>
                             </div>
-                            <span class="change-month-btn prev"><i class="change-month-icon fas fa-arrow-left"></i></span>
-                            <span class="change-month-btn next"><i class="change-month-icon fas fa-arrow-right"></i></span>
+                            <span class="change-month-btn prev"><i
+                                    class="change-month-icon fas fa-arrow-left"></i></span>
+                            <span class="change-month-btn next"><i
+                                    class="change-month-icon fas fa-arrow-right"></i></span>
                         </div>
                         <!-- End: Calender box -->
                     </div>
@@ -304,36 +310,172 @@
         </header>
 
         <div class="container">
-            <div class="grid">
-                <div class="filter">
-                    <ul class="filter__list">
-                        <li class="filter__item">
-                            <a href="#" class="filter__link">Hủy phòng linh hoạt</a>
-                        </li>
-                        <li class="filter__item">
-                            <a href="#" class="filter__link">Đặt phòng nhanh</a>
-                        </li>
-                        <li class="filter__item">
-                            <a href="#" class="filter__link">Giá ưu đãi</a>
-                        </li>
-                        <li class="filter__item">
-                            <a href="#" class="filter__link">Khu vực</a>
-                        </li>
-                        <li class="filter__item">
-                            <a href="#" class="filter__link">Loại phòng</a>
-                        </li>
-                        </li>
-                        <li class="filter__item">
-                            <a href="#" class="filter__link">Giá chỗ ở</a>
-                        </li>
-                        <li class="filter__item">
-                            <a href="#" class="filter__link">Thêm bộ lọc</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="filter">
+                <ul class="filter__list">
+                    <li class="filter__item filter__item--has-icon">
+                        <a href="#" class="filter__link">Hủy phòng linh hoạt</a>
+                        <i class="filter__icon fas fa-times-circle"></i>
+                    </li>
+                    <li class="filter__item filter__item--has-icon">
+                        <a href="#" class="filter__link">Đặt phòng nhanh</a>
+                        <i class="filter__icon fas fa-times-circle"></i>
+                    </li>
+                    <li class="filter__item filter__item--has-icon">
+                        <a href="#" class="filter__link">Giá ưu đãi</a>
+                        <i class="filter__icon fas fa-times-circle"></i>
+                    </li>
+                    <li class="filter__item filter__item--has-box">
+                        <a href="#" class="filter__link">Khu vực</a>
+                        <div class="filter-box place-box">
+                            <ul class="filter-box-list">
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Cẩm An</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Cẩm Châu</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Cẩm Nam</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Cẩm Phô</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Cửa Đại</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Minh An</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Sơn Phong</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Tân An</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Thanh Hà</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Cẩm Hà</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Cẩm Kim</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Cẩm Thanh</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Phường Tân Hiệp</p>
+                                </li>
+                            </ul>
+                            <div class="box-bottom">
+                                <span class="box-cancel box-btn">Xóa</span>
+                                <span class="box-apply box-btn">Áp dụng</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="filter__item filter__item--has-box">
+                        <a href="#" class="filter__link">Loại phòng</a>
+                        <div class="filter-box place-box">
+                            <ul class="filter-box-list">
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Homestay</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Nhà riêng</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Biệt thự</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Chung cư</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Studio</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Căn hộ dịch vụ</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Nhà tập thể/ Cư xá</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Farmstay/ Nhà sàn</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Khách sạn căn hộ</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Căn hộ Duplex</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Căn hộ Penthouse</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Biệt thự trên không</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Khu nghỉ dưỡng</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Hostel</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Nhà nghỉ</p>
+                                </li>
+                                <li class="filter-box-item">
+                                    <span class="filter-box-item__checkbox"></span>
+                                    <p class="filter-box-item__name">Nhà trọ</p>
+                                </li>
+                            </ul>
+                            <div class="box-bottom">
+                                <span class="box-cancel box-btn">Xóa</span>
+                                <span class="box-apply box-btn">Áp dụng</span>
+                            </div>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="filter__item filter__item--has-box">
+                        <a href="#" class="filter__link">Giá chỗ ở</a>
+                    </li>
+                    <li class="filter__item filter__item--has-box">
+                        <a href="#" class="filter__link">Thêm bộ lọc</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/product.js"></script>
+
 </body>
+
 </html>
