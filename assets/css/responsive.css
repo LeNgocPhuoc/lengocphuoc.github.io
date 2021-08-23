@@ -30,6 +30,10 @@
     .footer-info {
         padding: 20px 20px;
     }
+    
+    .filter__item:not(:last-child) {
+        display: none;
+    }
 }
 
 /* PC low resolution (min-width: 1024px) and (max-width: 1239px) */
